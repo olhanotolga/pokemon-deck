@@ -1,0 +1,91 @@
+* {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	padding-bottom: 2rem;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #eba9e6;
+	color: #403333;
+}
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 3pt peachpuff;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+}
+input {
+	margin: 0 0.3rem;
+	box-shadow: 1px 2px #B58FB9;
+	font-size: medium;
+}
+
+form input[type='text'] {
+	background-color: #efefef;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 8px;
+}
+form input[type='submit'] {
+	background-color: orangered;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 8px;
+	color: #efefef;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s;
+}
+form input[type='submit']:hover {
+	background-color: #6A8FB9;
+	box-shadow: 1px 2px #936997;
+}
+
+.pokemon {
+	background-color: peachpuff;
+	padding: 4rem;
+	text-align: center;
+	border-radius: 8px;
+}
+.stats, .abilities {
+	padding-top: 0.1rem;
+}
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	background-color: plum;
+	color: #efefef;
+	padding: 5px;
+}
+
+h3 {
+	text-decoration: underline;
+	text-decoration-color: #6A8FB9;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 2px;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	font-weight: lighter;
+}
+li.stat {
+	display: flex;
+	justify-content: space-between;
+}
